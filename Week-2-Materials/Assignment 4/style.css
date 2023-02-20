@@ -1,0 +1,125 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no repeat;
+}
+
+.bigbox{
+    background-color: white;
+   
+    height: 750px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: auto;
+    float: inline-end;
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+    
+}
+
+.smallbox{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    float: inline-end;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px ;
+    
+}
+
+.smallbox > div {
+    border: 2px solid red;
+    background-color: beige;
+    text-align: center;
+}
+
+.box { 
+    background-color: orange;
+    text-decoration: none;
+    border: 3px solid beige;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.modal1 {
+    background-color: lightblue;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.modal2 {
+    background-color: lawngreen;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+   
+}
+
+.modal1:target {
+    opacity: 0.9;
+    pointer-events: all;
+}
+
+.modal2:target {
+    opacity: 0.9;
+    pointer-events: all;
+}
+
+
+.mymodal1 {
+    background-color: orange;
+    width: 60%;
+    height: 580px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    margin-bottom: 10%; 
+    align-self: center;
+
+}
+
+.mymodal1 > div > a {
+    font-size: 20px;
+    margin-left: 98%;
+    background-color: aliceblue;
+    float:left;
+    
+    
+}
+
+.mymodal2 {
+    background-color: lightskyblue;
+    width: 60%;
+    height: 580px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    margin-bottom: 10%; 
+    align-self: center;
+}
+
+.mymodal2 > div > a {
+    font-size: 20px;
+    margin-left: 98%;
+    background-color: aliceblue;
+    float:left; 
+}
