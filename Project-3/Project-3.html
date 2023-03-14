@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="h1Box">
+      <h1 style="text-shadow: pink 2px 2px; font-family:'Times New Roman', Times, serif; font-size: 40px;">GUESS MY NUMBER</h1>
+      <p style="font-family:'Times New Roman', Times, serif; font-size:x-large">Guess the number between 1 and 100</p>
+    </div>
+    <div class="container">
+      <div id="score" style="background-color:pink; border-radius:20px; width:50%; text-align:center; margin-bottom:5%">
+        <p class="score">
+          Score: 10
+        </p>
+        <p class="best">
+          High Score: 0
+        </p>
+      </div>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+      <button style="border-radius:10px; background-color:pink; width:20%; border:1px solid black" class="reset" onclick="resetGame()">Reset</button>
+      <div class="innerBox">
+        <img width="40%" style="align-self:center" id="icon" src="think.jpg" />
+        <input type="number" placeholder="Guess my number" id="input-el" min="1" max="100" required>
+        <br>
+        <button class="btn">Check</button>
+        <p class="winLose" style="text-align:center"></p>
+        <p class="comment" style="text-align:center"></p>
+        <p class="score" style="text-align:center"></p>
+        <p class="best" style="text-align:center"></p>
+        <p class="show" style="text-align:center"></p>
+        <p class="howClose" style="text-align:center"></p>
+      </div>
+      <div id="history">
+        <p class="guessHistory">
+          Guess History
+        </p>
+      </div>
+    </div>
+  
+    <script src="Project-3.js"></script>
+  </body>
+  
+  </html>
